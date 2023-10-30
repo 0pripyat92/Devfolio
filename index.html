@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,12 +34,30 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wg
 </head>
 <body>
     
-<h1>teste</h1>
-
 
     <!--
-        custom js link
+        -#TOP BAR
     -->
+<header class="topbar">
+    <a href="#" class="logo">
+        <img src="assets/images/Logo_dark.png" alt="Devfolio" width="145" height="32" class="dark">
+        <img src="assets/images/Logo_light.png" alt="Devfolio" width="145" height="32" class="light">
+    </a>
+
+    <button class="icon-btn theme-btn" data-theme-btn>
+        <span class="material-symbols-outlined dark" aria-hidden="true"> dark_mode </span>
+
+        <span class="material-symbols-outlined light" aria-hidden="true"> light_mode </span>
+  
+        <div class="state-layer"></div>
+    </button>
+</header>
+
+<!--
+ 
+        custom js link
+    -
+    ->
     <Script src="js/script.js"></Script>
 
 </body>
