@@ -369,6 +369,7 @@ body {
   object-fit: cover;
 }
 
+.tab-content:not(.active) {display: none;}
 /*-----------------------------------*\
   #COMPONENT
 \*-----------------------------------*/
@@ -456,32 +457,24 @@ body {
 /**
  * CARD
  */
-.about-card {
+
+.card {
   background-color: var(--surface-container-low);
-  color: var(--on-surface-variant);
-  margin-inline: 16px;
+  border-radius: var(--radius-medium);
   padding: 16px;
-  margin-block-start: 24px;
-  border-radius: var(--radius-large);
+  --state-layer-br: var(var(--on-surface))
 }
 
-.about-card .card-title {color: var(--on-surface);}
-.about-card .card-text {
-  margin-block: 12px;
-  padding-block: 12px;
-  border-block: 1px solid var(--outline-variant);
-}
+.card-banner { border-radius: var(--radius-medium);}
 
-.about-list {
+.card-content {
   display: grid;
-  gap: 12px;
-}
-
-.list-item {
-  display: flex;
-  align-items: center;
   gap: 4px;
 }
+
+.card-subtitle {color: var(--on-surface-variant);}
+
+.card-title { color: var(--on-surface);}
 
 /**
  * INPUT FIELD
@@ -588,8 +581,11 @@ body {
 /*-----------------------------------*\
   #PROJECT
 \*-----------------------------------*/
-
-
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
 
 
 
