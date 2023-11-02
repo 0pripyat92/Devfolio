@@ -335,7 +335,7 @@ body {
   'OPSZ' 24;
 }
 
-:has(>.state-layer) {
+:has(> .state-layer) {
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -350,8 +350,9 @@ body {
 
 :has(> .state-layer):hover .state-layer { opacity: 0.08;}
 
-:has(> .state-layer):is(:focus, :focus-visible, :active) .state-layer {opacity: 0.12;
-}
+:has(> .state-layer):is(:focus, :focus-visible, :active) .state-layer {
+  opacity: 0.12;
+} 
 
 .section {padding-block: var(--section-padding);}
 
@@ -455,7 +456,7 @@ body {
   
 }
 
-.chip .material-symbols-outlined {font-size: a.8rem;}
+.chip .material-symbols-outline {font-size: a.8rem;}
 
 /**
  * CARD
