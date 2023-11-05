@@ -730,7 +730,9 @@ body {
   #FOOTER
 \*-----------------------------------*/
 
-
+.footer .container {
+  text-align: center;
+}
 
 
 
